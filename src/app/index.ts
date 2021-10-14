@@ -9,6 +9,10 @@ export default async (app: Application): Promise<void> => {
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({ extended: false }));
 
+  //TODO: CREATE UNIT TESTING
+
+  //TODO: CREATE SWAGGER
+
   // API Handling
   let key: keyof typeof routes;
   for (key in routes) {
